@@ -19,3 +19,5 @@ backups/
 domocookie.txt
 domoticz.exe
 /Config/zwcfg_*.xml
+domoticz.db-*
+update.tgz*
