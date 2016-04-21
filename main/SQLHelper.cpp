@@ -2450,7 +2450,7 @@ void CSQLHelper::Do_Work()
 	{
 		//sleep 1 second
 		//sleep_seconds(1);
-		sleep_milliseconds(100);
+		sleep_milliseconds(50);
 
 		if (m_bAcceptHardwareTimerActive)
 		{

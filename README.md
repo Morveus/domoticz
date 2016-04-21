@@ -1,3 +1,12 @@
+# Compilation notes
+`cmake -DCMAKE_BUILD_TYPE=Release .`
+`make`
+
+# About this fork
+Domoticz uses a lot of `sleep_seconds(1);` calls, that delays most of the actions that I need to be almost instant (turning lights ON/OFF for instance).
+
+I replaced those calls by `sleep_milliseconds(50);` without knowing if this would negatively impact the app. For now, it's working as intended.
+
 # Domoticz
 
 Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device
