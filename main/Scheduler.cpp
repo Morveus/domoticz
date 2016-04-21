@@ -616,7 +616,8 @@ void CScheduler::Do_Work()
 	while (!m_stoprequested)
 	{
 		//sleep 1 second
-		sleep_seconds(1);
+		//sleep_seconds(1);
+		sleep_milliseconds(100);
 
 		time_t atime = mytime(NULL);
 		struct tm ltime;
