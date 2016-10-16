@@ -1,6 +1,8 @@
 *.orig
 msbuild
 *.db
+*.db-shm
+*.db-wal
 *.bak
 appversion.h
 appversion.h.txt
@@ -8,6 +10,12 @@ Makefile
 CMakeFiles
 *.cmake
 *.a
+*.exp
+*.idb
+*.log
+*.obj
+*.pdb
+*.tlog
 CMakeCache.txt
 domoticz
 stdafx.h.gch
@@ -19,5 +27,4 @@ backups/
 domocookie.txt
 domoticz.exe
 /Config/zwcfg_*.xml
-domoticz.db-*
-update.tgz*
+/makebetarob
