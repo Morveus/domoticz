@@ -2203,7 +2203,7 @@ define(['app'], function (app) {
 						}
 					}
 					else if (item.SwitchType == "TPI") {
-						var RO=(item.Unit>100)?true:false;
+						var RO=(item.Unit>0)?true:false;
 						isdimmer=true;
 						if (
 								(item.Status == 'On')
@@ -2749,7 +2749,7 @@ define(['app'], function (app) {
 									 }
 							}
 							else if (item.SwitchType == "TPI") {
-									var RO=(item.Unit>100)?true:false;
+									var RO=(item.Unit>0)?true:false;
 									bIsDimmer=true;
 									if (item.Status == 'On')
 									{
@@ -2834,7 +2834,7 @@ define(['app'], function (app) {
 					}
 					else if (item.SwitchType == "TPI") {
 						xhtm+='<br><br><div style="margin-left:60px;" class="dimslider" id="slider" data-idx="' + item.idx + '" data-type="relay" data-maxlevel="' + item.MaxDimLevel + '" data-isprotected="' + item.Protected + '" data-svalue="' + item.LevelInt + '"';
-						if(item.Unit>100)
+						if(item.Unit>0)
 							xhtm+=' data-disabled="true"';
 						xhtm+='></div>';
 					}
@@ -3172,7 +3172,7 @@ define(['app'], function (app) {
 				totunits=4;
 			}
 			else if (lighttype==9) {
-				tothousecodes=4;
+				tothousecodes=16;
 				totunits=4;
 			}
 			else if (lighttype==10) {
@@ -3308,7 +3308,7 @@ define(['app'], function (app) {
 				//Blinds
 				$("#dialog-addmanuallightdevice #blindsparams").show();
 				var bShow4 = (lighttype==206)||(lighttype==207)||(lighttype==209);
-				var bShowUnit = (lighttype==206)||(lighttype==207)||(lighttype==208)||(lighttype==209);
+				var bShowUnit = (lighttype==206)||(lighttype==207)||(lighttype==208)||(lighttype==209)||(lighttype==212);
 				if (bShow4)
 					$('#dialog-addmanuallightdevice #blindsparams #combocmd4').show();
 				else
